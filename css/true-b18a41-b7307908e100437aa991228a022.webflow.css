@@ -194,6 +194,16 @@ a {
   color: #aaa;
 }
 
+.navitem.discreet-link.contactlink {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.navitem.discreet-link.contactlink.headings {
+  right: 2rem;
+}
+
 .faq-p {
   overflow: hidden;
   width: 100%;
