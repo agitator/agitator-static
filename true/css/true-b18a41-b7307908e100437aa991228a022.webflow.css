@@ -106,6 +106,7 @@ a {
 
 .section {
   position: relative;
+  overflow: auto;
   height: 100vh;
 }
 
@@ -127,6 +128,8 @@ a {
 
 .footer.right {
   position: fixed;
+  display: none;
+  overflow: visible;
   -webkit-box-flex: 0;
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
@@ -366,14 +369,12 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 10%;
+  margin-right: 7rem;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
   background-color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0)), color-stop(30%, hsla(0, 0%, 100%, 0.99)), to(#fff));
-  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0.99) 30%, #fff);
 }
 
 @media screen and (max-width: 991px) {
@@ -399,6 +400,11 @@ a {
   .faq-img {
     width: 50px;
     height: 50px;
+  }
+
+  .div-block {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0)), color-stop(25%, #fff), to(#fff));
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #fff 25%, #fff);
   }
 }
 
